@@ -1,0 +1,102 @@
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+body{
+    background-image: url("assests/sky.jpg");
+    
+    height: 98vh;
+    
+}
+
+.cars{
+    position: absolute;
+    top: 50vh;
+    left: 500px;
+
+}
+.car{
+    width: 500px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wheel1{
+    position: absolute;
+    left: 43px;
+    top: 100px;
+    width: 100px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.wheel2{
+    position: absolute;
+    left: 343px;
+    top: 100px;
+    width: 100px;
+     animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+.cityBackground{
+    position: absolute;
+    top: 32vh;
+    
+    animation-name: city1AndRoadMove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.city{
+
+    position: absolute;
+    width: 100vw;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.city2{
+    position: absolute;
+    width: 100vw;
+    left: 100vw;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+.road{
+    position: absolute;
+    top: 62vh;
+    animation-name: city1AndRoadMove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Animations code */
+
+@keyframes city1AndRoadMove {
+    0%{left: 0; }
+    100%{left:-1000px}
+    
+}
+
+@keyframes city2Move {
+    0%{left: 100vw; }
+    100%{left:-1000px}
+    
+}
+
+@keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
